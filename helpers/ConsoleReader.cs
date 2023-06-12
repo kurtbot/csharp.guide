@@ -18,4 +18,9 @@ class ConsoleReader
         }
         return number;
     }
+
+    public string ReadString()
+    {
+        return Console.ReadLine();
+    }
 }
