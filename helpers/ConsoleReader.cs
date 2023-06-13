@@ -1,8 +1,7 @@
-using System.Console;
-
+using System;
 class ConsoleReader
 {
-    ConsoleReader()
+    public ConsoleReader()
     {
         Console.WriteLine("[ConsoleReader] Created instance of ConsoleReader");
     }
@@ -13,7 +12,7 @@ class ConsoleReader
         int number;
         while (!Int32.TryParse(input, out number))
         {
-            Console.Writeline($"{input} is not a number");
+            Console.WriteLine($"{input} is not a number");
             input = Console.ReadLine();
         }
         return number;

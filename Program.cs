@@ -1,12 +1,10 @@
-﻿
-
-namespace CSharpGuide
+﻿class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!"); // this is where the program runs
-        }
+        Example ex = new PropertiesExample();
+
+        Console.WriteLine("Hello, World!"); // this is where the program runs
+        ex.run();
     }
 }

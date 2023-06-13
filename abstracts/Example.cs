@@ -10,13 +10,10 @@ abstract class Example
         }
     }
 
-    Example(string exampleName)
+    public Example(string exampleName)
     {
         _name = exampleName;
     }
 
-    public abstract void run()
-    {
-        Console.WriteLine("Example.run()");
-    }
+    public abstract void run();
 }
